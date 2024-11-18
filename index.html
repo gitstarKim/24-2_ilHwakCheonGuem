@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Crypto Exchange</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Market</a>
+            <a href="#">My Account</a>
+        </nav>
+    </header>
+
+    <section id="market">
+        <h2>Market</h2>
+        <div class="coin-list">
+            <div class="coin">
+                <p>Bitcoin (BTC)</p>
+                <span id="btc-price">Loading...</span>
+                <canvas id="btc-chart" width="800" height="400"></canvas> <!-- Bitcoin 차트 추가 -->
+                <button onclick="buyCrypto('BTC')">Buy</button>
+                <button onclick="sellCrypto('BTC')">Sell</button>
+            </div>
+            <div class="coin">
+                <p>Ethereum (ETH)</p>
+                <span id="eth-price">Loading...</span>
+                <canvas id="eth-chart" width="800" height="400"></canvas> <!-- Ethereum 차트 추가 -->
+                <button onclick="buyCrypto('ETH')">Buy</button>
+                <button onclick="sellCrypto('ETH')">Sell</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Crypto Exchange</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

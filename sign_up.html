@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>main</title>
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <link rel="stylesheet" type="text/css" href="sign_in.css">
+    </head>
+    <body>
+      <header class="header">
+        <a class="logo" href="main.html">
+            <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                <image href="logo.png" width="150" height="150"/>
+            </svg>
+        </a>
+      </header>
+      <main class="main">
+        <div class="div0">
+          <div class="div1">
+            <h1>Create an Account</h1>
+            <p class="text0">Sign up to start using IlHwakCheonGuem</p>
+          </div>
+          <form class="form0">
+            <div class="div2">
+                <Label class="label0">Full Name</Label>
+                <Input class="input0" id="fullname" placeholder="John Doe" required type="email" />
+              </div>
+            <div class="div2">
+              <Label class="label0">Email</Label>
+              <Input class="input0" id="email" placeholder="m@example.com" required type="email" />
+            </div>
+            <div className="div2">
+              <Label class="label0">Password</Label>
+              <Input class="input0" id="password" required type="password" />
+            </div>
+            <div className="div2">
+                <Label class="label0">Confirm Password</Label>
+                <Input class="input0" id="password" required type="password" />
+              </div>
+            <Button class="button_black_long" type="submit">
+              Sign Up
+            </Button>
+          </form>
+          <div class="div3">
+            <a class="a0">
+                Already have an account?
+            </a>
+            <a class="a0" href="sign_in.html">
+              Login
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="text1">© 2024 VirtualCoin. All rights reserved.</p>
+        <nav class="gnb2">
+          <a class="text2" href="/terms">
+            Terms of Service
+          </a>
+          <a class="text2" href="/privacy">
+            Privacy
+          </a>
+        </nav>
+      </footer>
+  </body>
+</html>

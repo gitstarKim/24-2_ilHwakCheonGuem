@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="exchange.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+        <script src="chart.js"></script>
+    <meta charset="utf-8" />
+    <title>Bitcoin Chart</title>
+    </head>
+    <body onload="onLoad()">
+        <div>
+            <header class="header">
+                <a class="logo" href="main.html">
+                    <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+                        <image href="logo.png" width="150" height="150"/>
+                    </svg>
+                </a>
+                <nav class="gnb">
+                  <a class="text0" href="exchange.html">
+                    Exchange
+                  </a>
+                  <a class="text0" href="sign_in.html">
+                    Sing In
+                  </a>
+                  <a class="text0" href="sign_up.html">
+                    Sign Up
+                  </a>
+                </nav>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="content">
+                        <div class="aside">
+                            <div class="coinList">
+                                <div>
+                                    <ul class="coinListScroll" id="myList" onchange="selectOnChange(0, this.value, this.options[this.selectedIndex].text)">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Chart">
+                            <table style="width:50%; min-width:300px"><tr><td>
+    <div style="float: left; font-size: 15px; margin:4px"> 캔들 단위 </div>
+    <select name="selectUnit" id="selectUnit" class="form-select form-select-sm" style="width:20%; min-width:100px; vertical-align:middle" onchange="selectUnitOnChange(this.selectedIndex, this.value, this.options[this.selectedIndex].text)">
+        <option id="0" value="1">1분</option>
+        <option id="1" value="3">3분</option>
+        <option id="2" value="5">5분</option>
+        <option id="3" value="10">10분</option>
+        <option id="4" value="15">15분</option>
+        <option id="5" value="30">30분</option>
+        <option id="6" value="60">1시간</option>
+        <option id="7" value="240">4시간</option>
+    </select>
+    </td><td>
+    <div style="float: left; font-size: 15px; margin:4px"> 업데이트 간격 </div>
+    <select name="updateInterval" id="updateInterval" class="form-select form-select-sm" style="width:20%; min-width:100px; vertical-align:middle" onchange="updateIntervalOnChange(this.selectedIndex, this.value, this.options[this.selectedIndex].text)">
+        <option id="0" value="None">없음</option>
+        <option id="1" value="1s">1초</option>
+        <option id="2" value="3s">3초</option>
+        <option id="3" value="10s">10초</option>
+        <option id="4" value="30s">30초</option>
+        <option id="5" value="1m">1분</option>
+        <option id="6" value="5m">5분</option>
+        <option id="7" value="30m">30분</option>
+        <option id="8" value="1h">1시간</option>
+    </select>
+    </td></tr></table>
+                            <div id="chart0" style="width:100%;height:200px;float: both" hidden></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <p class="text1">© 2024 VirtualCoin. All rights reserved.</p>
+                <nav class="gnb2">
+                  <a class="text2" href="/terms">
+                    Terms of Service
+                  </a>
+                  <a class="text2" href="/privacy">
+                    Privacy
+                  </a>
+                </nav>
+            </footer>
+        </div> 
+  </body>
+</html>

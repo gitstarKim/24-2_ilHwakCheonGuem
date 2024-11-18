@@ -1,0 +1,20 @@
+@charset "utf-8";
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+}
+
+.aside {
+    flex: 1 1 200px;
+}
+
+.chart {
+    flex: 1;
+}
+
+.coinListScroll {
+    max-width: 373;
+    max-height: 474;
+    overflow: scroll;
+}
