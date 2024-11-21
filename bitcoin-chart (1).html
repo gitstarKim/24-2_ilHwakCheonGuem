@@ -1,10 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="ko">
-    <head>
-        <link rel="stylesheet" type="text/css" href="common.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="exchange.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta charset="utf-8" />
     <title>Bitcoin Chart</title>
 
@@ -354,55 +352,23 @@
 
 
     </script>
-    <meta charset="utf-8" />
-    <title>Bitcoin Chart</title>
-    </head>
-    <body onload="onLoad()">
-        <div>
-            <header class="header">
-                <a class="logo" href="main.html">
-                    <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
-                        <image href="logo.png" width="150" height="150"/>
-                    </svg>
-                </a>
-                <nav class="gnb">
-                  <a class="text0" href="exchange.html">
-                    Exchange
-                  </a>
-                  <a class="text0" href="sign_in.html">
-                    Sing In
-                  </a>
-                  <a class="text0" href="sign_up.html">
-                    Sign Up
-                  </a>
-                </nav>
-            </header>
-            <main>
-                <table style="width:50%; min-width:300px"><tr><td>
-                    <div style="float: left; font-size: 15px; margin:4px"> 캔들 단위 </div>
-                    <select name="selectUnit" id="selectUnit" class="form-select form-select-sm" style="width:20%; min-width:100px; vertical-align:middle" onchange="selectUnitOnChange(this.selectedIndex, this.value, this.options[this.selectedIndex].text)">
-                        <option id="0" value="1">1분</option>
-                        <option id="1" value="5">5분</option>
-                        <option id="2" value="60">1시간</option>
-                        <option id="3" value="1440">일봉</option> <!-- 일봉 옵션 -->
-                    </select>
-                    </table>
-                
-                    <select name="selectMarket0" id="selectMarket0" class="form-select form-select-sm select_coin" onchange="selectOnChange(0, this.value, this.options[this.selectedIndex].text)"></select>
-                    <br/><br/>
-                    <div id="chart0" style="width:100%;height:400px;float: both" hidden></div>
-            </main>
-            <footer class="footer">
-                <p class="text1">© 2024 VirtualCoin. All rights reserved.</p>
-                <nav class="gnb2">
-                  <a class="text2" href="/terms">
-                    Terms of Service
-                  </a>
-                  <a class="text2" href="/privacy">
-                    Privacy
-                  </a>
-                </nav>
-            </footer>
-        </div> 
-  </body>
+</head>
+<body onload="onLoad()">
+    <table style="width:50%; min-width:300px"><tr><td>
+    <div style="float: left; font-size: 15px; margin:4px"> 캔들 단위 </div>
+	<select name="selectUnit" id="selectUnit" class="form-select form-select-sm" style="width:20%; min-width:100px; vertical-align:middle" onchange="selectUnitOnChange(this.selectedIndex, this.value, this.options[this.selectedIndex].text)">
+		<option id="0" value="1">1분</option>
+		<option id="1" value="5">5분</option>
+		<option id="2" value="60">1시간</option>
+		<option id="3" value="1440">일봉</option> <!-- 일봉 옵션 -->
+	</select>
+    </table>
+
+    <select name="selectMarket0" id="selectMarket0" class="form-select form-select-sm select_coin" onchange="selectOnChange(0, this.value, this.options[this.selectedIndex].text)"></select>
+    <br/><br/>
+    <div id="chart0" style="width:100%;height:400px;float: both" hidden></div>
+</body>
+
 </html>
+
+
